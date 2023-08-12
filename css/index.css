@@ -1,0 +1,116 @@
+/* start global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #303134;
+}
+.container {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 130px;
+}
+.container section {
+    background-color: #222;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+}
+/* end global */
+
+/* start input section */
+.container .inputs {
+    margin-bottom: 30px;
+}
+.container .inputs div {
+    display: flex;
+}
+.container .inputs input {
+    width: 100%;
+    background-color: #22222251;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.container .inputs div i {
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 14px;
+    cursor: pointer;
+}
+/* end input section */
+
+/* start outputs section */
+.outputs {
+    width: 100%;
+}
+.outputs .task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    max-width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #ffffff7f;
+}
+.outputs .task i{
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.outputs .task .taskValue{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.outputs .task.done .taskValue {
+    text-decoration: line-through;
+}
+.outputs .task.done i.circle {
+    background-color: #fff;
+}
+/* end outputs section */
+
+
+/* start nav */
+div.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #e8e8e89c;
+}
+div.nav div {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    div.nav {
+        text-align: center;
+        line-height: 1.8;
+    }
+}
+/* end nav */
